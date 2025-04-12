@@ -93,16 +93,6 @@ function blackjackGame()
             userBalance = updateBalance(userBalance, bet, jackpotBet, winner, bjHandCheck, jackpot);
             balanceHistory(end+1) = userBalance;
 
-            fileID = fopen('game_log.txt', 'a'); % Opening file in append mode
-            if fileID == -1
-                fprintf('Error opening file for writing.\n');
-            else
-                fprintf(fileID, 'Game in round %d on %s with final balance: $%0.0f\n', roundCount, datetime(), userBalance); % Saving to File
-                fclose(fileID); % Close File
-                fprintf('Round balance logged to game_log.txt\n');
-            end
-
-
             % Dialog to show the current round number
             uialert(uifigure, sprintf('Round %d completed', roundCount), 'Round Update');
         end
@@ -131,8 +121,8 @@ function blackjackGame()
             if fileID == -1
                 fprintf('Error opening file for writing.\n');
             else
-                fprintf(fileID, 'Game ended on %s with final balance: $%0.0f\n', datetime(), userBalance); % Saving to File
-                fclose(fileID); % Close File
+                fprintf(fileID, 'Game ended on %s with final balance: $%0.0f\n', datestr(now), userBalance);
+                fclose(fileID);
                 fprintf('Final balance logged to game_log.txt\n');
             end
             fprintf("\nGame Over!");

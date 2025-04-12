@@ -17,7 +17,6 @@ function bjMainMenu()
     % Displaying welcome messages
     fprintf("\nHello %s, \n",name);
     fprintf("Welcome to Casino Blackjack. \n");
-    fprintf("Your initial cash is $1000. Good luck! \n \n")
 
     % Displaying main menu and prompt user for selection of options
     while true
