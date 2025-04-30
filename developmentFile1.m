@@ -58,6 +58,7 @@ function blackjackGame()
             
            fprintf('\nYour initial cards: %s of %s, %s of %s', userHand(1).Rank, userHand(1).Suit, userHand(2).Rank, userHand(2).Suit);
            fprintf('\nDealer cards: %s of %s, [Hidden] \n', dealerHand(1).Rank, dealerHand(1).Suit);
+           break
         end    
     end
     

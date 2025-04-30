@@ -1,12 +1,15 @@
 % Changes Made from developmentFile2:
-% - Built on the second version by adding a seasonal twist using seasonSelector().
-% - Introduced four seasons (Autumn, Spring, Summer, Winter) with unique effects: halving jackpot bets in Autumn, normal play in Spring, dealer hits on 18 in Summer, and Aces worth 12 in Winter.
-% - Added jackpot feature in userBet() and updateBalance(), allowing players to bet on getting two same-rank cards for a jackpot win.
-% - Enhanced calculateHandValue() and dealerTurn() to account for seasonal effects.
-% - Added reShuffleCards() and dealInitialCards() to manage deck size dynamically.
-% - Included userBalanceGraph() to visualize balance changes over time using MATLAB plotting.
-% - Main game now displays season effects and tracks jackpot, with visual feedback via graphs.
-% - Total code length exceeds 400 lines, demonstrating modular design and creativity.
+% - Added comprehensive documentation/comments for all functions explaining their purpose and logic
+% - Implemented test driver functions for each major component (createDeckDriver(), shuffleDeckDriver(), etc.)
+% - Added assertions in test drivers to verify correct functionality
+% - Improved input validation and error handling throughout
+% - Added detailed test cases for edge scenarios (empty deck, exactly 4 cards, etc.)
+% - Improved calculateHandValue() with additional test cases for Ace handling
+% - Added validation for dealer's soft 17 behavior
+% - Included more comprehensive testing of blackjack scenarios
+% - Improved handling of edge cases in all functions
+% - Added more detailed status messages during gameplay
+% - Maintained all existing functionality while making these improvements
 
 % assert(cond,msg) throws an error and displays the error message, msg, if cond is false.
 

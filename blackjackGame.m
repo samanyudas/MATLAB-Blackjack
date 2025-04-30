@@ -54,7 +54,7 @@ function blackjackGame()
             % 2. Dealing Cards (shuffling the deck is managed by function, dealInitialCards)
             [userHand, dealerHand, deck] = dealInitialCards(deck);
             
-        % Bonus Add - Checking for Jackpot Win
+            % Bonus Add - Checking for Jackpot Win
             if length(userHand) == 2 && strcmp(userHand(1).Rank, userHand(2).Rank)
                 fprintf('Jackpot Win! You recieeved %s of %s and %s of %s! Congratulations, You Won %0.0f! \n', userHand(1).Rank, userHand(1).Suit, userHand(2).Rank, userHand(2).Suit,jackpot)
                 userBalance = userBalance + jackpot; % User recieves the jackpot money

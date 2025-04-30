@@ -1,10 +1,10 @@
-% Changes Made from developmentFile4:
+% Changes Made from developmentFile3:
 % - Further refined the third version with additional testing and driver functions for each major function (e.g., createDeckDriver(), shuffleDeckDriver(), etc.).
 % - Improved error handling and input validation, especially in userBet() and initial balance input.
 % - Ensured all functions use Fisher-Yates shuffle for consistency and added assert statements in drivers for thorough testing.
 % - Simplified some logic in calculateHandValue() and dealerTurn() while maintaining seasonal effects.
 % - Removed redundant code and comments from previous versions, focusing on clarity and efficiency.
-% - Maintained the jackpot and seasonal features, with enhanced visualization through userBalanceGraph().
+% - Added the jackpot and seasonal features, with enhanced visualization through userBalanceGraph().
 % - Added documentation for each function’s purpose and behavior, ensuring modularity and readability.
 % - This version represents the final, tested, and optimized state of the Blackjack game, with all extensions (seasons, jackpots, visualization) fully integrated.
 
@@ -498,7 +498,6 @@ function blackjackGame()
             fprintf("Invalid input! Only positive numbers can be accepted for Balance. \n");
         end
     end
-    userBalance = str2double(userBalance); % Converting the balance from string data type to numeric data type
     balanceHistory = [userBalance];
     jackpot = 0;
     deck = createDeck();
