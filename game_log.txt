@@ -1,0 +1,14 @@
+Game in round 1 on 30-Apr-2025 14:24:53 with final balance: $9800
+Game in round 5 on 30-Apr-2025 14:25:36 with final balance: $8700
+Game in round 1 on 30-Apr-2025 14:32:25 with final balance: $10000
+Game in round 2 on 30-Apr-2025 14:32:38 with final balance: $9900
+Game in round 3 on 30-Apr-2025 14:32:49 with final balance: $9800
+Game in round 5 on 30-Apr-2025 14:33:02 with final balance: $9800
+Game in round 1 on 30-Apr-2025 14:40:37 with final balance: $99000
+Game in round 2 on 30-Apr-2025 14:41:35 with final balance: $100000
+Game in round 3 on 30-Apr-2025 14:41:43 with final balance: $99000
+Game in round 4 on 30-Apr-2025 14:42:35 with final balance: $99100
+Game in round 2 on 30-Apr-2025 14:48:21 with final balance: $9900
+Game in round 3 on 30-Apr-2025 14:48:30 with final balance: $8900
+Game in round 4 on 30-Apr-2025 14:48:42 with final balance: $7900
+Game in round 5 on 30-Apr-2025 14:48:50 with final balance: $8000

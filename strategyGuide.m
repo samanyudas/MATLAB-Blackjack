@@ -1,5 +1,5 @@
 function strategyGuide()
-    % Define basic strategy table
+    % Defined basic strategy table
     % Rows: Player's hand total (5 to 21)
     % Columns: Dealer's upcard (2-10, 11 for Ace)
     % 0 = Hit, 1 = Stand

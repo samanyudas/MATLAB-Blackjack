@@ -5,13 +5,14 @@ function updateBalanceDriver()
 
     bet = 1000; % initialising bet
     balance = 10000; % initialising starting balance
+    jackpot = 0; % No jackpot won in these tests
+    jackpotBet = 0; % No jackpot bet in these tests
 
     % Test 1: User wins without blackjack
     disp("Test 1: User wins without blackjack")
     winner = "user";
     bjHandCheck = false; 
-    newBalance = updateBalance(balance, bet, winner, bjHandCheck); % Calling function to run
-    afterBetBalance = balance + (bet);
+    newBalance = updateBalance(balance, bet, jackpotBet, winner, bjHandCheck, jackpot);    afterBetBalance = balance + (bet);
     assert(newBalance == afterBetBalance, "❌ Test 1 Failed: Incorrect balance after User wins without blackjack") % Checking Balance before and after are Same or nOt
     disp("✅ Test 1 Passed");
     
@@ -19,8 +20,7 @@ function updateBalanceDriver()
     disp("Test 2: User wins with blackjack")
     winner = "user";
     bjHandCheck = true; 
-    newBalance = updateBalance(balance, bet, winner, bjHandCheck); % Calling function to run
-    afterBetBalance = balance + (bet*1.5);
+    newBalance = updateBalance(balance, bet, jackpotBet, winner, bjHandCheck, jackpot);    afterBetBalance = balance + (bet*1.5);
     assert(newBalance == afterBetBalance, "❌ Test 2 Failed: Incorrect balance after User wins with blackjack") % Checking Balance before and after are Same or nOt
     disp("✅ Test 2 Passed");
     
@@ -28,8 +28,7 @@ function updateBalanceDriver()
     disp("Test 3: User loses, Dealer wins")
     winner = "dealer";
     bjHandCheck = false; 
-    newBalance = updateBalance(balance, bet, winner, bjHandCheck); % Calling function to run
-    afterBetBalance = balance - bet;
+    newBalance = updateBalance(balance, bet, jackpotBet, winner, bjHandCheck, jackpot);    afterBetBalance = balance - bet;
     assert(newBalance == afterBetBalance, "❌ Test 3 Failed: Incorrect balance after User wins with blackjack") % Checking Balance before and after are Same or nOt
     disp("✅ Test 3 Passed");
 
@@ -37,7 +36,7 @@ function updateBalanceDriver()
     disp("Test 4: Push between User and Dealer")
     winner = "push";
     bjHandCheck = false;
-    newBalance = updateBalance(balance, bet, winner, bjHandCheck); % Calling function to run
+    newBalance = updateBalance(balance, bet, jackpotBet, winner, bjHandCheck, jackpot);
     assert(newBalance == balance, "❌ Test 4 Failed: Incorrect balance after push") % Checking Balance before and after are Same or nOt
     disp("✅ Test 4 Passed");
 
